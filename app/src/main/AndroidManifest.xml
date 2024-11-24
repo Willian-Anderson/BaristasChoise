@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BaristaChoise"
+        tools:targetApi="31">
+        <activity
+            android:name=".produto_Cookie_Red_Velvet"
+            android:exported="false" />
+        <activity
+            android:name=".produto_Cookie_MM"
+            android:exported="false" />
+        <activity
+            android:name=".produto_Cookie_tradicional"
+            android:exported="false" />
+        <activity
+            android:name=".produto_Cappuccino_Avela"
+            android:exported="false" />
+        <activity
+            android:name=".formLogin"
+            android:exported="false" />
+        <activity
+            android:name=".form_Compra_Bem_Sucedida"
+            android:exported="false" />
+        <activity
+            android:name=".formFinalizar_Compra"
+            android:exported="false" />
+        <activity
+            android:name=".formEntrega"
+            android:exported="false" />
+        <activity
+            android:name=".formUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".formCarrinho"
+            android:exported="false" />
+        <activity
+            android:name=".produto_Cappucino_Tradicional"
+            android:exported="false" />
+        <activity
+            android:name=".produto_Cappucino_Italiano"
+            android:exported="false" />
+        <activity
+            android:name=".formCadastro"
+            android:exported="false" />
+        <activity
+            android:name=".formMenu"
+            android:exported="false" />
+        <activity
+            android:name=".formLogo"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

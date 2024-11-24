@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ns_cappuccino_italiano"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainProduto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#391200"
+        tools:context=".produto_Cappucino_Italiano"
+        >
+
+        <!--Start Logo-->
+
+        <ImageView
+            android:id="@+id/img_logo_cappuccino1"
+            android:layout_width="168dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icone_marca4"
+            />
+
+        <!--End Logo-->
+
+        <!--Start Come Back-->
+
+        <ImageView
+            android:id="@+id/img_come_back_italiano"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="100dp"
+            android:contentDescription="@string/comeback"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrow_left_circle_line"
+            />
+
+        <!--End Come Back-->
+
+        <!--Start Body-->
+
+
+        <View
+            android:id="@+id/body_cappuccino_italiano"
+            style="@style/back_white"
+            android:layout_width="410dp"
+            android:layout_height="680dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/img_produto1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/produtoD"
+            android:src="@drawable/img_cafe_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo_cappuccino1"
+            />
+
+        <ImageView
+            android:id="@+id/ic_nota_italiano"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/ic_nota_italiano"
+            app:layout_constraintStart_toStartOf="@id/body_cappuccino_italiano"
+            app:layout_constraintTop_toTopOf="@id/body_cappuccino_italiano" />
+
+        <TextView
+            android:id="@+id/txt_preco_cappuccino_italiano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textColor="@color/yellow"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt_descrição_cappuccino_italiano"
+            app:layout_constraintEnd_toEndOf="@+id/body_cappuccino_italiano"
+            app:layout_constraintStart_toEndOf="@+id/txt_cappuccino_italiano"
+            app:layout_constraintTop_toBottomOf="@+id/ic_nota_italiano"
+            />
+
+        <TextView
+            android:id="@+id/txt_cappuccino_italiano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt_texto_descrição_italiano"
+            app:layout_constraintEnd_toEndOf="@+id/body_cappuccino_italiano"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/body_cappuccino_italiano"
+            app:layout_constraintTop_toBottomOf="@+id/ic_nota_italiano"
+            app:layout_constraintVertical_bias="0.263"
+            />
+
+        <TextView
+            android:id="@+id/txt_descrição_cappuccino_italiano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/descrição"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt_texto_descrição_italiano"
+            app:layout_constraintStart_toStartOf="@+id/body_cappuccino_italiano"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cappuccino_italiano"
+            />
+
+        <TextView
+            android:id="@+id/txt_texto_descrição_italiano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/cappuccino_italiano_descricao"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/body_cappuccino_italiano"
+            app:layout_constraintTop_toBottomOf="@+id/txt_descrição_cappuccino_italiano"
+            />
+
+        <TextView
+            android:id="@+id/txt_tamanho_cappuccino_italiano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/tamanho"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/body_cappuccino_italiano"
+            app:layout_constraintTop_toBottomOf="@+id/txt_texto_descrição_italiano"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_ad_carrinho_cappuccino_italiano"
+            style="@style/button_padrao"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="138dp"
+            android:text="@string/ad_carrinho"
+            app:layout_constraintBottom_toTopOf="@+id/navigation_cappuccino1"
+            app:layout_constraintStart_toStartOf="@+id/body_cappuccino_italiano"
+            app:layout_constraintTop_toBottomOf="@+id/img_ml_cappuccino_italiano"
+            app:layout_constraintVertical_bias="0.872"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_comprar_agora_cappuccino_italiano"
+            style="@style/button_padrao"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="270dp"
+            android:text="@string/comprarA"
+            app:layout_constraintBottom_toTopOf="@+id/navigation_cappuccino1"
+            app:layout_constraintStart_toStartOf="@+id/body_cappuccino_italiano"
+            app:layout_constraintTop_toBottomOf="@+id/img_ml_cappuccino_italiano"
+            app:layout_constraintVertical_bias="0.872" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_decrementar_produto_italiano"
+            style="@style/button.quantidade"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="28dp"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="@id/img_quantidade_italiano"
+            app:layout_constraintTop_toTopOf="@id/img_quantidade_italiano" />
+
+        <TextView
+            android:id="@+id/txt_quantidade_produto_italiano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="33dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/img_quantidade_italiano"
+            app:layout_constraintTop_toTopOf="@id/img_quantidade_italiano" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_incrementar_produto_italiano"
+            style="@style/button.quantidade"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="28dp"
+            android:text="+"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/img_quantidade_italiano"
+            app:layout_constraintTop_toTopOf="@id/img_quantidade_italiano" />
+
+        <ImageView
+            android:id="@+id/img_quantidade_italiano"
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/ic_quantidade"
+            app:layout_constraintStart_toStartOf="@id/body_cappuccino_italiano"
+            app:layout_constraintTop_toBottomOf="@id/check_ad_2_italiano"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/img_ml_cappuccino_italiano"
+            android:layout_width="74dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/tamanho"
+            android:src="@drawable/_50ml"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toStartOf="@+id/body_cappuccino_italiano"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tamanho_cappuccino_italiano"
+            />
+
+        <TextView
+            android:id="@+id/txt_adicionais_italiano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/adicionais"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/body_cappuccino_italiano"
+            app:layout_constraintTop_toBottomOf="@id/img_ml_cappuccino_italiano" />
+
+        <CheckBox
+            android:id="@+id/check_ad_1_italiano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/adicional_1"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/body_cappuccino_italiano"
+            app:layout_constraintTop_toBottomOf="@id/txt_adicionais_italiano" />
+
+        <CheckBox
+            android:id="@+id/check_ad_2_italiano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/adicional_2"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/body_cappuccino_italiano"
+            app:layout_constraintTop_toBottomOf="@id/check_ad_1_italiano" />
+
+        <!--End Body-->
+
+        <!-- Start Navegação-->
+
+
+        <View
+            android:id="@+id/navigation_cappuccino1"
+            style="@style/navigationDown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/ic_home_cappuccino1"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:contentDescription="@string/ic_menu"
+            app:layout_constraintEnd_toEndOf="@+id/navigation_cappuccino1"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/navigation_cappuccino1"
+            app:layout_constraintTop_toTopOf="@+id/navigation_cappuccino1"
+            app:srcCompat="@drawable/home_2_fill"
+            />
+
+        <ImageView
+            android:id="@+id/ic_person_cappuccino1"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ic_pessoa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="@+id/navigation_cappuccino1"
+            app:layout_constraintTop_toTopOf="@+id/navigation_cappuccino1"
+            app:srcCompat="@drawable/user_line"
+            />
+
+        <ImageView
+            android:id="@+id/ic_basket_cappuccino1"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ic_cesta"
+            app:layout_constraintEnd_toEndOf="@+id/navigation_cappuccino1"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="@+id/navigation_cappuccino1"
+            app:layout_constraintTop_toTopOf="@+id/navigation_cappuccino1"
+            app:srcCompat="@drawable/shopping_basket_2_line"
+            />
+
+        <ImageView
+            android:id="@+id/ic_moto_cappuccino1"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ic_caixa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="@+id/navigation_cappuccino1"
+            app:layout_constraintTop_toTopOf="@+id/navigation_cappuccino1"
+            app:srcCompat="@drawable/motorbike_line"
+            />
+
+
+        <!--End Navegação-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

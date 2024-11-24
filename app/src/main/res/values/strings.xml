@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">BaristaChoise</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastro">Cadastre-se aqui!</string>
+    <string name="senha">Senha</string>
+    <string name="email">E-mail</string>
+    <string name="nome">Nome</string>
+    <string name="logo">logo</string>
+    <string name="telefone">Telefone</string>
+    <string name="cadastrese">Cadastre-se</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="produtoD">Protudos</string>
+    <string name="cafe">Cafés</string>
+    <string name="ic_menu">Menu</string>
+    <string name="ic_pessoa">Usuário</string>
+    <string name="ic_cesta">Cesta</string>
+    <string name="ic_caixa">Caixa</string>
+    <string name="img_produto">Produto</string>
+    <string name="cookie">Cookies</string>
+    <string name="banner">Banner_Menu</string>
+    <string name="cappuccino_italiano_descricao">   O cappuccino italiano é uma bebida feita com café expresso, leite e espuma de leite, servida em partes iguais.
+        A palavra "cappuccino" vem do italiano "cappucio", que significa "capuz", e faz referência à cor do hábito dos frades capuchinhos.</string>
+    <string name="descrição">Descrição:</string>
+    <string name="tamanho">Tamanho</string>
+    <string name="cappuccino_italiano">Cappuccino italiano</string>
+    <string name="comeback">come back</string>
+    <string name="linkcarrinho">carrinho</string>
+    <string name="cappucino_tradicional">Cappuccino tradicional</string>
+    <string name="cappuccino_tradicional_descricao">O cappuccino tradicional é uma bebida feita com café, leite e espuma, com uma proporção de 1:1:1. Para prepará-lo,
+        pode-se usar uma máquina de expresso com saída de vapor, ou então fazer um café coado bem concentrado.</string>
+    <string name="cappuccino_avela_descricao">Uma receita clássica de cappuccino que combina uma espuma de leite macia e um envolvente aroma de avelãs. Um cappuccino corresponde,
+        aproximadamente, a 150 ml de bebida, composta por um espresso (30 ml) e partes iguais de leite e creme de leite.</string>
+    <string name="cookie_tradicional_descricao">O cookie tradicional é um biscoito macio por dentro e crocante por fora, que pode conter pedaços de chocolate. A receita original dos cookies vem dos biscoitos da Idade Média, que eram assados duas vezes para evitar que estragassem rápido.
+Cada região do mundo tem suas próprias versões e tradições culinárias relacionadas aos cookies. Por exemplo, na América Latina, os alfajores são biscoitos recheados com doce de leite e cobertos com chocolate ou açúcar de confeiteiro.</string>
+    <string name="cookie_mm_descricao">Feito com chocolate ao leite, cookies, e casquinha de confeitos coloridos. Deliciosos e crocantes, eles vão te surpreender. Traz uma textura diferente e uma irresistível crocância, aprovado até mesmo por aqueles que possuem um paladar ainda mais exigente.</string>
+    <string name="cookie_rv_descricao">O Cookie Red Velvet é uma combinação perfeita entre crocância e maciez. Sua massa de tom vermelho Bordeaux (red) harmoniza o sabor de chocolate com um delicioso recheio de brigadeiro de cream cheese.
+Os cookies são ideais para o lanche ou para aqueles momentos em que surge a vontade de saborear um doce leve. Ter alguns no pote de biscoitos é garantia de sucesso, especialmente com recheio.</string>
+    <string name="ad_carrinho">Adicionar ao Carrinho</string>
+    <string name="fl_compra">Finalizar Compra</string>
+    <string name="dados">Meus Dados</string>
+    <string name="numero">Número:</string>
+    <string name="endereco">Endereço:</string>
+    <string name="nome_perfil">Nome:</string>
+    <string name="email_perfil">E-mail:</string>
+    <string name="senha_perfil">Senha:</string>
+    <string name="meio_pagamento">Meio de Pagamento:</string>
+    <string name="deslogar">Deslogar</string>
+    <string name="enderoco_fake">Rua da Imprensa, Monte Castelo, Campo Grande, MS.</string>
+    <string name="meio_pagamento_fake">**** **** **** ****</string>
+    <string name="perfil">Perfil</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="enderecoFC">Endereço</string>
+    <string name="meiopagamentoFC">Método de Pagamento</string>
+    <string name="cartao">Cartão de Crédito</string>
+    <string name="total_FC">Total da compra:</string>
+    <string name="frete">Frete:</string>
+    <string name="sucesso">Compra bem sucedida!</string>
+    <string name="carrinho">Cesta</string>
+    <string name="descricao_Endereco">Endereco</string>
+    <string name="descricao_cartao">Cartao</string>
+    <string name="irentrega">Ir para pedidos</string>
+    <string name="adicionais">Adicionais</string>
+    <string name="adicional_1">Chocolate ................................................. R$10,00</string>
+    <string name="adicional_2">Canela ...................................................... R$10,50</string>
+    <string name="produto">Total dos produtos</string>
+    <string name="pularlogin">Pular login</string>
+    <string name="japossui">Já possui login?</string>
+    <string name="login"><u>Login</u></string>
+    <string name="comprarA">Comprar Agora</string>
+
+</resources>

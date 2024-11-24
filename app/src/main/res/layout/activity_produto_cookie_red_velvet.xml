@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ns_Cookie_RV"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/mainCookie_RV"
+    android:background="#391200"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".produto_Cookie_Red_Velvet">
+
+    <!--Start Logo-->
+    <ImageView
+        android:id="@+id/img_logo_Cookie_RV"
+        android:layout_width="168dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icone_marca4"
+        android:contentDescription="@string/logo"
+        />
+    <!--End Logo-->
+
+    <!--Start Come Back-->
+
+    <ImageView
+        android:id="@+id/img_come_back_Cookie_RV"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/comeback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_left_circle_line" />
+
+    <!--End Come Back-->
+
+    <!--Start Body-->
+
+    <View
+        android:id="@+id/body_Cookie_RV"
+        style="@style/back_white"
+        android:layout_width="411dp"
+        android:layout_height="680dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_Cookie_RV"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_Cookie_RV"
+        app:srcCompat="@drawable/img_cookie_3" />
+
+    <ImageView
+        android:id="@+id/ic_nota_Cookie_RV"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/ic_nota_rv"
+        app:layout_constraintStart_toStartOf="@id/body_Cookie_RV"
+        app:layout_constraintTop_toTopOf="@id/body_Cookie_RV" />
+
+    <TextView
+        android:id="@+id/txt_Cookie_RV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/txt_texto_descricao_Cookie_RV"
+        app:layout_constraintEnd_toEndOf="@+id/body_Cookie_RV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/body_Cookie_RV"
+        app:layout_constraintTop_toBottomOf="@+id/ic_nota_Cookie_RV"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <TextView
+        android:id="@+id/txt_preco_Cookie_RV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/yellow"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_descricao_Cookie_RV"
+        app:layout_constraintEnd_toEndOf="@+id/body_Cookie_RV"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/txt_Cookie_RV"
+        app:layout_constraintTop_toBottomOf="@+id/ic_nota_Cookie_RV"
+        app:layout_constraintVertical_bias="0.417" />
+
+    <TextView
+        android:id="@+id/txt_descricao_Cookie_RV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/descrição"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_texto_descricao_Cookie_RV"
+        app:layout_constraintStart_toStartOf="@+id/body_Cookie_RV"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Cookie_RV" />
+
+    <TextView
+        android:id="@+id/txt_texto_descricao_Cookie_RV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/cookie_rv_descricao"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/body_Cookie_RV"
+        app:layout_constraintTop_toBottomOf="@+id/txt_descricao_Cookie_RV" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_decrementar_Cookie_RV"
+        style="@style/button.quantidade"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="28dp"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@id/img_quantidade_Cookie_RV"
+        app:layout_constraintTop_toTopOf="@id/img_quantidade_Cookie_RV" />
+
+    <TextView
+        android:id="@+id/txt_quantidade_produto_Cookie_RV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="33dp"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/img_quantidade_Cookie_RV"
+        app:layout_constraintTop_toTopOf="@id/img_quantidade_Cookie_RV" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_incrementar_produto_Cookie_RV"
+        style="@style/button.quantidade"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="28dp"
+        android:text="+"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/img_quantidade_Cookie_RV"
+        app:layout_constraintTop_toTopOf="@id/img_quantidade_Cookie_RV" />
+
+    <ImageView
+        android:id="@+id/img_quantidade_Cookie_RV"
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/ic_quantidade"
+        app:layout_constraintStart_toStartOf="@id/body_Cookie_RV"
+        app:layout_constraintBottom_toTopOf="@id/navigation_Cookie_RV"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_ad_carrinho_Cookie_RV"
+        style="@style/button_padrao"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="138dp"
+        android:text="@string/ad_carrinho"
+        app:layout_constraintBottom_toTopOf="@+id/navigation_Cookie_RV"
+        app:layout_constraintStart_toStartOf="@+id/body_Cookie_RV"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_comprar_agora_Cookie_RV"
+        style="@style/button_padrao"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/comprarA"
+        app:layout_constraintBottom_toTopOf="@+id/navigation_Cookie_RV"
+        app:layout_constraintStart_toStartOf="@+id/body_Cookie_RV"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <!--End Body-->
+
+    <!--Start Navigation-->
+    <View
+        android:id="@+id/navigation_Cookie_RV"
+        style="@style/navigationDown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ic_home_Cookie_RV"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/ic_menu"
+        app:layout_constraintEnd_toEndOf="@+id/navigation_Cookie_RV"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/navigation_Cookie_RV"
+        app:layout_constraintTop_toTopOf="@+id/navigation_Cookie_RV"
+        app:srcCompat="@drawable/home_2_fill" />
+
+    <ImageView
+        android:id="@+id/ic_person_Cookie_RV"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ic_pessoa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="@+id/navigation_Cookie_RV"
+        app:layout_constraintTop_toTopOf="@+id/navigation_Cookie_RV"
+        app:srcCompat="@drawable/user_line" />
+
+    <ImageView
+        android:id="@+id/ic_basket_Cookie_RV"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ic_cesta"
+        app:layout_constraintEnd_toEndOf="@+id/navigation_Cookie_RV"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/navigation_Cookie_RV"
+        app:layout_constraintTop_toTopOf="@+id/navigation_Cookie_RV"
+        app:srcCompat="@drawable/shopping_basket_2_line" />
+
+    <ImageView
+        android:id="@+id/ic_moto_Cookie_RV"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ic_caixa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/navigation_Cookie_RV"
+        app:layout_constraintTop_toTopOf="@+id/navigation_Cookie_RV"
+        app:srcCompat="@drawable/motorbike_line" />
+
+    <!--End Navigation-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

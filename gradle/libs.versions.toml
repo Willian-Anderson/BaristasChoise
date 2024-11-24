@@ -1,0 +1,48 @@
+[versions]
+agp = "8.6.1"
+firebaseBom = "33.5.1"
+firebaseCommonKtx = "21.0.0"
+googleServices = "4.4.2"
+gson = "2.11.0'"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+kotlinxSerializationJson = "1.7.3"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+kotlinStdlib = "2.0.20"
+firebase = "4.4.2"
+kotlin = "2.0.0"
+activityCompose = "1.9.3"
+composeBom = "2024.10.01"
+composeNavigation = "2.8.3"
+
+[libraries]
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-common-ktx = { module = "com.google.firebase:firebase-common-ktx", version.ref = "firebaseCommonKtx" }
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlinStdlib" }
+firebase-auth = {group = "com.google.firebase", name = "firebase-auth"}
+firebase-firestore = {group = "com.google.firebase", name = "firebase-firestore"}
+compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation"}
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom"}
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose"}
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+googleServise = { id = "com.google.gms.google-services", version.ref = "firebase"}
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+

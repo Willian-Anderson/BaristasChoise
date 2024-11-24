@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="Edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_tex</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:maxLength">25</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="button">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@drawable/button</item>
+
+    </style>
+
+    <style name="button_padrao">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:width">40dp</item>
+        <item name="android:height">39dp</item>
+        <item name="android:background">@drawable/button_carrinho</item>
+    </style>
+
+    <style name="button.quantidade">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:backgroundTint">@color/whiteg</item>
+    </style>
+
+    <style name="cadastro">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="back_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">500dp</item>
+        <item name="android:background">@drawable/edit_back_white</item>
+    </style>
+
+    <style name="navigationDown">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/brow</item>
+    </style>
+    
+    <style name="image">
+        <item name="background">@drawable/edit_image</item>
+    </style>
+    
+</resources>

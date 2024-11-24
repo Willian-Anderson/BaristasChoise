@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/produto_entrega"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/whiteg">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_produto_entrega"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="30dp"
+        app:cardBackgroundColor="@color/whiteg"
+        app:cardElevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_produto_entrega"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/img_produto"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_nome_produto_entrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="25dp"
+        android:text="Cappuccino Italiano"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/card_produto_entrega"
+        app:layout_constraintTop_toTopOf="@id/produto_entrega" />
+
+    <TextView
+        android:id="@+id/txt_data_produto_entrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="5dp"
+        android:text="11/11/2024"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/card_produto_entrega"
+        app:layout_constraintTop_toBottomOf="@id/txt_nome_produto_entrega" />
+
+    <TextView
+        android:id="@+id/txt_preco_entrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="5dp"
+        android:text="R$ 44,00"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/card_produto_entrega"
+        app:layout_constraintTop_toBottomOf="@id/txt_data_produto_entrega" />
+
+    <TextView
+        android:id="@+id/txt_total_pedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:text="Total pedido: R$ 44,00"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/card_produto_entrega"
+        app:layout_constraintTop_toBottomOf="@id/txt_preco_entrega" />
+
+    <View
+        android:id="@+id/view_produto_entrega"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/card_produto_entrega"
+        tools:layout_editor_absoluteX="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

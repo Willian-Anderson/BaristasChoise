@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ns_Usuario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/mainPerfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#391200"
+    tools:context=".formUsuario"
+    >
+
+    <!--Start Logo-->
+    <ImageView
+        android:id="@+id/img_logo_usuario"
+        android:layout_width="168dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icone_marca4"
+        />
+    <!--End Logo-->
+
+    <!--Start Body-->
+
+    <View
+        android:id="@+id/body_usuario"
+        style="@style/back_white"
+        android:layout_width="411dp"
+        android:layout_height="766dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txt_meus_dados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/dados"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/body_usuario"
+        app:layout_constraintStart_toStartOf="@+id/body_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_usuario" />
+
+    <View
+        android:id="@+id/view_meus_dados"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@id/body_usuario"
+        app:layout_constraintTop_toBottomOf="@id/txt_meus_dados"
+        tools:layout_editor_absoluteX="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_nome_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/nome_perfil"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/body_usuario"
+        app:layout_constraintTop_toBottomOf="@id/view_meus_dados"
+        />
+
+    <TextView
+        android:id="@+id/txt_nome_fire_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/txt_nome_usuario"
+        app:layout_constraintTop_toBottomOf="@id/view_meus_dados"
+        />
+
+    <TextView
+    android:id="@+id/txt_email_usuario"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:fontFamily="sans-serif"
+    android:text="@string/email_perfil"
+    android:textColor="@color/black"
+    android:textSize="15sp"
+    app:layout_constraintStart_toStartOf="@id/body_usuario"
+    app:layout_constraintTop_toBottomOf="@id/txt_nome_usuario"
+        />
+
+    <TextView
+        android:id="@+id/txt_email_fire_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="sans-serif"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/txt_email_usuario"
+        app:layout_constraintTop_toBottomOf="@id/txt_nome_fire_usuario"
+        />
+
+    <TextView
+        android:id="@+id/txt_endereco_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/endereco"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/body_usuario"
+        app:layout_constraintTop_toBottomOf="@id/txt_email_usuario"
+        />
+
+    <TextView
+        android:id="@+id/txt_endereco_fake_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/enderoco_fake"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/txt_endereco_usuario"
+        app:layout_constraintTop_toBottomOf="@id/txt_email_fire_usuario"
+        />
+
+    <TextView
+        android:id="@+id/txt_numero_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/numero"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/body_usuario"
+        app:layout_constraintTop_toBottomOf="@id/txt_endereco_usuario"
+        />
+
+    <TextView
+        android:id="@+id/txt_numero_fire_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/txt_numero_usuario"
+        app:layout_constraintTop_toBottomOf="@id/txt_endereco_fake_usuario"
+        />
+
+    <TextView
+        android:id="@+id/txt_meio_pagamento_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/meio_pagamento"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/body_usuario"
+        app:layout_constraintTop_toBottomOf="@id/txt_numero_usuario"
+        />
+
+    <TextView
+        android:id="@+id/txt_meio_pagamento_fake_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/meio_pagamento_fake"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/txt_meio_pagamento_usuario"
+        app:layout_constraintTop_toBottomOf="@id/txt_numero_fire_usuario"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_deslogar"
+        style="@style/button_padrao"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/deslogar"
+        app:layout_constraintBottom_toTopOf="@+id/navigation_usuario"
+        app:layout_constraintEnd_toEndOf="@+id/body_usuario"
+        app:layout_constraintStart_toStartOf="@+id/body_usuario"
+        />
+
+
+    <!--End Body-->
+
+    <!-- Start Navegação-->
+
+    <View
+        android:id="@+id/navigation_usuario"
+        style="@style/navigationDown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/ic_home_usuario"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/ic_menu"
+        app:layout_constraintEnd_toEndOf="@+id/navigation_usuario"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/navigation_usuario"
+        app:layout_constraintTop_toTopOf="@+id/navigation_usuario"
+        app:srcCompat="@drawable/home_2_line"
+        />
+
+    <ImageView
+        android:id="@+id/ic_person_usuario"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ic_pessoa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="@+id/navigation_usuario"
+        app:layout_constraintTop_toTopOf="@+id/navigation_usuario"
+        app:srcCompat="@drawable/user_fill"
+        />
+
+    <ImageView
+        android:id="@+id/ic_basket_usuario"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ic_cesta"
+        app:layout_constraintEnd_toEndOf="@+id/navigation_usuario"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/navigation_usuario"
+        app:layout_constraintTop_toTopOf="@+id/navigation_usuario"
+        app:srcCompat="@drawable/shopping_basket_2_line"
+        />
+
+    <ImageView
+        android:id="@+id/ic_moto_usuario"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ic_caixa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/navigation_usuario"
+        app:layout_constraintTop_toTopOf="@+id/navigation_usuario"
+        app:srcCompat="@drawable/motorbike_line"
+        />
+
+
+    <!--End Navegação-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ns_CBS"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/mainCBS"
+    android:background="#391200"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".form_Compra_Bem_Sucedida">
+
+    <!--Start Logo-->
+
+    <ImageView
+        android:id="@+id/img_logo_CBS"
+        android:layout_width="168dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icone_marca4" />
+
+    <!--End Logo-->
+
+    <!--Start Body-->
+
+    <View
+        android:id="@+id/body_CBS"
+        style="@style/back_white"
+        android:layout_width="411dp"
+        android:layout_height="755dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_logo_CBS"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_Sucesso"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/sucesso"
+        app:layout_constraintStart_toStartOf="@id/body_CBS"
+        app:layout_constraintTop_toTopOf="@id/body_CBS"
+        />
+
+    <TextView
+        android:id="@+id/txt_compra_sucesso_CBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alegreya"
+        android:text="@string/sucesso"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/body_CBS"
+        app:layout_constraintTop_toBottomOf="@id/img_Sucesso" />
+
+    <View
+        android:id="@+id/view_sucesso_CBS"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_compra_sucesso_CBS"
+         />
+
+    <ImageView
+        android:id="@+id/img_basket_CBS"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/carrinho"
+        app:layout_constraintStart_toStartOf="@id/body_CBS"
+        app:layout_constraintTop_toBottomOf="@id/view_sucesso_CBS"
+        app:srcCompat="@drawable/basket" />
+
+    <TextView
+        android:id="@+id/txt_nome_produto_CBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/produto"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/img_basket_CBS"
+        app:layout_constraintTop_toBottomOf="@id/view_sucesso_CBS" />
+
+    <TextView
+        android:id="@+id/txt_preco_CBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="55dp"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/img_basket_CBS"
+        app:layout_constraintTop_toBottomOf="@id/view_sucesso_CBS" />
+
+
+    <ImageView
+        android:id="@+id/img_endereco_CBS"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/descricao_Endereco"
+        app:layout_constraintStart_toStartOf="@id/body_CBS"
+        app:layout_constraintTop_toBottomOf="@id/img_basket_CBS"
+        app:srcCompat="@drawable/endereco" />
+
+    <TextView
+        android:id="@+id/txt_endereco_CBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/enderecoFC"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/img_endereco_CBS"
+        app:layout_constraintTop_toBottomOf="@id/txt_preco_CBS" />
+
+    <TextView
+        android:id="@+id/txt_dados_endereco_CBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/enderoco_fake"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/img_endereco_CBS"
+        app:layout_constraintTop_toBottomOf="@id/txt_endereco_CBS" />
+
+
+    <ImageView
+        android:id="@+id/img_credit_CBS"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/descricao_cartao"
+        app:layout_constraintStart_toStartOf="@id/body_CBS"
+        app:layout_constraintTop_toBottomOf="@id/img_endereco_CBS"
+        app:srcCompat="@drawable/credit_card" />
+
+    <TextView
+        android:id="@+id/txt_meio_pagamento_CBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/meiopagamentoFC"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/img_credit_CBS"
+        app:layout_constraintTop_toBottomOf="@id/txt_dados_endereco_CBS" />
+
+    <TextView
+        android:id="@+id/txt_cartao_CBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:text="@string/cartao"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/img_credit_CBS"
+        app:layout_constraintTop_toBottomOf="@id/txt_meio_pagamento_CBS" />
+
+    <TextView
+        android:id="@+id/txt_dado_pagamento_CBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:text="@string/meio_pagamento_fake"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/img_credit_CBS"
+        app:layout_constraintTop_toBottomOf="@id/txt_cartao_CBS" />
+
+    <View
+        android:id="@+id/view_dados_CBS"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/img_credit_CBS"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/txt_total_CBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/total_FC"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/view_dados_CBS"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/txt_preco_total_CBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/txt_total_CBS"
+        app:layout_constraintTop_toBottomOf="@id/view_dados_CBS" />
+
+
+
+    <!--End Body-->
+
+
+    <!-- Start Navegação-->
+
+    <View
+        android:id="@+id/navigation_CBS"
+        style="@style/navigationDown"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ir_pedidos_CBS"
+        style="@style/button_padrao"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/irentrega"
+        app:layout_constraintStart_toStartOf="@id/navigation_CBS"
+        app:layout_constraintTop_toTopOf="@id/navigation_CBS" />
+
+
+    <!--End Navegação-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

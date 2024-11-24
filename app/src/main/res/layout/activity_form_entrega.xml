@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ns_Entrega"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main_entrega"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formEntrega"
+    android:background="#391200"
+    >
+
+    <!--Start Logo-->
+    <ImageView
+        android:id="@+id/img_logo_entrega"
+        android:layout_width="168dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icone_marca4"
+        />
+    <!--End Logo-->
+
+    <!--Start body-->
+    <View
+        android:id="@+id/body_entrega"
+        style="@style/back_white"
+        android:layout_width="411dp"
+        android:layout_height="766dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear_entrega"
+        android:layout_width="411dp"
+        android:layout_height="720dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="@id/body_entrega"
+        app:layout_constraintTop_toTopOf="@id/body_entrega">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_Entrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!--End Body-->
+
+    <!-- Start Navegação-->
+
+
+    <View
+        android:id="@+id/navigation_entrega"
+        style="@style/navigationDown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/ic_home_entrega"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/ic_menu"
+        app:layout_constraintEnd_toEndOf="@+id/navigation_entrega"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/navigation_entrega"
+        app:layout_constraintTop_toTopOf="@+id/navigation_entrega"
+        app:srcCompat="@drawable/home_2_line"
+        />
+
+    <ImageView
+        android:id="@+id/ic_person_entrega"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ic_pessoa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="@+id/navigation_entrega"
+        app:layout_constraintTop_toTopOf="@+id/navigation_entrega"
+        app:srcCompat="@drawable/user_line" />
+
+    <ImageView
+        android:id="@+id/ic_basket_entrega"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ic_cesta"
+        app:layout_constraintEnd_toEndOf="@+id/navigation_entrega"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/navigation_entrega"
+        app:layout_constraintTop_toTopOf="@+id/navigation_entrega"
+        app:srcCompat="@drawable/shopping_basket_2_line" />
+
+    <ImageView
+        android:id="@+id/ic_moto_entrega"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ic_caixa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/navigation_entrega"
+        app:layout_constraintTop_toTopOf="@+id/navigation_entrega"
+        app:srcCompat="@drawable/motorbike_fill" />
+
+
+    <!--End Navegação-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

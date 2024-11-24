@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/ns_Menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    >
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/mainMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context=".formMenu"
+    >
+
+
+    <!--Body-->
+
+    <ImageView
+        android:id="@+id/img_logo_menu"
+        android:layout_width="168dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icone_marca3"
+        />
+
+
+        <!--Start Option Coffee-->
+
+        <LinearLayout
+            android:id="@+id/tabela_vertical"
+            android:layout_width="413dp"
+            android:layout_height="260dp"
+            android:background="@color/whiteg"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo_menu"
+            >
+
+
+            <TextView
+
+                android:id="@+id/txt_Cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:fontFamily="@font/afacad_bold"
+                android:text="@string/cafe"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/img_logo_menu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/tabela_vertical"
+                />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/whiteg"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_products1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        >
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!--End Option Coffee-->
+
+        <ImageView
+            android:id="@+id/img_banner"
+            android:layout_width="411dp"
+            android:layout_height="97dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/banner"
+            app:layout_constraintBottom_toTopOf="@+id/tabela_cookie"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabela_vertical"
+            app:srcCompat="@drawable/img_coffee_time"
+            />
+
+        <!--Start Option Cookie-->
+
+        <LinearLayout
+            android:id="@+id/tabela_cookie"
+            android:layout_width="413dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/whiteg"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_banner"
+            >
+
+            <TextView
+                android:id="@+id/txt_cookie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:fontFamily="@font/afacad_bold"
+                android:text="@string/cookie"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/img_banner"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/tabela_cookie"
+                />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/whiteg"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_cookies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        />
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+        <!--End Option Cookie-->
+
+
+    <!--Start Navigation-->
+
+    <View
+        android:id="@+id/navigation_menu"
+        style="@style/navigationDown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/ic_home_menu"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:contentDescription="@string/ic_menu"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/navigation_menu"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/navigation_menu"
+        app:layout_constraintTop_toTopOf="@+id/navigation_menu"
+        app:srcCompat="@drawable/home_2_fill"
+        />
+
+    <ImageView
+        android:id="@+id/ic_person_menu"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:contentDescription="@string/ic_pessoa"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="@+id/navigation_menu"
+        app:layout_constraintTop_toTopOf="@+id/navigation_menu"
+        app:srcCompat="@drawable/user_line"
+        />
+
+    <ImageView
+        android:id="@+id/ic_basket_menu"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:contentDescription="@string/ic_cesta"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/navigation_menu"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/navigation_menu"
+        app:layout_constraintTop_toTopOf="@+id/navigation_menu"
+        app:srcCompat="@drawable/shopping_basket_2_line"
+        />
+
+    <ImageView
+        android:id="@+id/ic_moto_menu"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ic_caixa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/navigation_menu"
+        app:layout_constraintTop_toTopOf="@+id/navigation_menu"
+        app:srcCompat="@drawable/motorbike_line"
+        />
+
+    <!--End Navigation-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
