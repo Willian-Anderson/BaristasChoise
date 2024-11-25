@@ -1,3 +1,5 @@
+Manual de Uso
+
 Bem-vindo ao Projeto Baristas Choice
 
 Este projeto apresenta um aplicativo para facilitar o processo de escolha e compra de produtos. A seguir, está descrito o caminho principal que você pode seguir no aplicativo:
