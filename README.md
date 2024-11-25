@@ -17,14 +17,18 @@ No menu principal, escolha o produto que deseja.
 5. Produto:
 
 . Selecione a quantidade desejada (entre 1 e 5 unidades).
+
 . Escolha entre as opções "Comprar agora" ou "Adicionar ao carrinho".
 
 6. Comprar Agora:
 Nesta etapa, você visualizará os seguintes itens:
 
 . Produtos selecionados;
+
 . Meio de pagamento previamente cadastrado;
+
 . Endereço de entrega cadastrado.
+
 7. Compra Bem-Sucedida:
 Após a confirmação da compra, clique em "Ir para pedidos".
 
